@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Inscrição Vestibular</h1>
+    <form>
+        <label for="name">Informe seu nome</label>
+        <input id="input-name" type="text" name="name" placeholder="ex: João das Neves">
+        <span class="warning">Informe nome e sobrenome</span>
+        <label for="email">Informe seu e-mail</label>
+        <input id="input-email" type="email" name="email" placeholder="ex: jao.neves@email.com">
+        <span class="warning">Informe um e-mail válido</span>
+        <label for="birthdate">Informe seu ano de nascimento</label>
+        <input id="input-birth" type="number" name="birthdate" placeholder="ex: 1969">
+        <span class="warning">Informe uma data de nascimento válida</span>
+        <select name="test-city" id="test-city">
+            <option value="empty" selected>Selecione um local de prova</option>
+            <option value="rj">Rio de Janeiro-RJ</option>
+            <option value="ba">Salvador-BA</option>
+            <option value="ce">Fortaleza-CE</option>
+            <option value="to">Palmas-TO</option>
+            <option value="am">Manaus-AM</option>
+            <option value="df">Brasília-DF</option>
+        </select>
+        <span class="warning">Selecione um local de prova</span>
+        <div class="radio-div">
+            <legend>Turno da realização da prova</legend>
+            <div>
+                <input type="radio" name="period" id="morning">
+                <label for="morning">Manhã</label>
+            </div>
+            <div>
+                <input type="radio" name="period" id="afternoon">
+                <label for="afternoon">Tarde</label>
+            </div>
+            <div>
+                <input type="radio" name="period" id="evening">
+                <label for="evening">Noite</label>
+            </div>
+            <span class="warning">Selecione um turno de prova</span>
+        </div>
+        <div>
+            <legend>Cursos de interesse</legend>
+            <div>
+                <input class="checkbox" type="checkbox" name="math" id="math">
+                <label for="math">Matemática</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" name="computer-science" id="computer-science">
+                <label for="computer-science">Ciência da Computação</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" name="data-science" id="data-science">
+                <label for="data-science">Data Science</label>
+            </div>
+        </div>
+        <label for="recovery-password">Senha de recuperação</label>
+        <input id="password" type="password" name="recovery-password" id="recovery-password">
+        <span class="warning">A senha deve ter entre 8 e 16 caracteres</span>
+
+        <button>salvar</button>
+    </form>
+
+    <script type"text/javascript" src="script.js"></script>
+</body>
+
+</html>

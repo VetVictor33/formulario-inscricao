@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    height: 100%;
+
+    background-color: purple;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+
+}
+
+h1 {
+    color: white;
+
+    font-size: 33px;
+
+    margin-top: 60px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+    height: fit-content;
+
+    padding: 20px 30px;
+    margin: 10px;
+    background-color: white;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+select {
+    height: fit-content;
+
+    margin: 10px 0;
+    padding: 10px;
+
+    font-size: 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+label[for=recovery-password] {
+    margin-top: 10px;
+}
+
+form button {
+    height: 45px;
+
+    margin: 10px 0;
+
+    background-color: green;
+
+    border: none;
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.warning {
+    color: red;
+    display: none;
+
+    margin-bottom: 5px;
+    margin-top: 2.5px;
+}
